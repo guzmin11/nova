@@ -33,7 +33,7 @@
     body, main, button, input, select, textarea { font-family: "Poppins", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
     .hero-title, .section-title { font-family: "Poppins", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: 0; }
     .gradient-bar { background: linear-gradient(90deg, #7c3aed, #38bdf8); }
-    .hero-mockup-img { width: min(112%, 920px); max-width: 920px; margin-inline: auto; transform: translateX(-5%); }
+    .hero-mockup-img { width: min(132%, 1120px); max-width: 1120px; margin: -1.5rem auto 0; transform: translateX(-12%); }
     .feature-card { aspect-ratio: 1 / 1; }
     .feature-card .feature-image-wrap { height: 78%; display: flex; align-items: center; justify-content: center; }
     .feature-card img { width: 100%; height: 100%; object-fit: contain; }
@@ -89,14 +89,14 @@
     .carousel-dot[aria-current="true"] { width: 1.6rem; background: linear-gradient(90deg,#7c3aed,#38bdf8); }
     .guarantee-icon { width: 5rem; height: 5rem; border-radius: 1.25rem; margin: 0 auto 1.4rem; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 2.35rem; background: linear-gradient(135deg,#7c3aed,#ec4899); box-shadow: 0 18px 34px -18px rgba(168,85,247,.95); }
     @media (max-width: 640px) {
-      main { width: min(100vw, 390px); max-width: 390px; margin-inline: auto; overflow-x: hidden; }
-      section > div { max-width: min(calc(100vw - 2rem), 358px) !important; }
+      main { width: 100%; max-width: none; overflow-x: hidden; }
+      section > div { width: 100%; max-width: calc(100vw - 2rem) !important; }
       .hero-badge { max-width: 100%; white-space: normal; line-height: 1.35; }
-      .hero-title { font-size: 2.3rem !important; line-height: 1 !important; max-width: calc(100vw - 2rem); margin-inline: auto; }
+      .hero-title { font-size: 2.35rem !important; line-height: 1 !important; max-width: calc(100vw - 2rem); margin-inline: auto; }
       .section-title { font-size: 2rem !important; line-height: 1.08 !important; max-width: calc(100vw - 2rem); margin-inline: auto; }
       .mobile-safe-cta { width: 100%; max-width: calc(100vw - 2rem); white-space: normal; line-height: 1.25; padding-left: 1rem; padding-right: 1rem; animation: cta-pulse 2s ease-in-out infinite !important; }
       .hero-title, .section-title, p, span, li, a, button { overflow-wrap: break-word; }
-      .hero-mockup-img { width: 112%; max-width: 430px; transform: translateX(-5%); }
+      .hero-mockup-img { width: 148%; max-width: 620px; margin-top: -2rem; transform: translateX(-16%); }
       .feature-card .feature-image-wrap { height: 76%; }
       .audience-card { border-radius: 0; border-left: 0; border-right: 0; box-shadow: none; }
       .upsell-modal { padding: .5rem; }
@@ -145,7 +145,7 @@
           <span class="text-purple-500 text-lg font-bold">›</span>
           <div class="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-sm border border-purple-100"><span class="text-sm font-bold text-slate-800">Adapte e aplique</span></div>
         </div>
-        <div class="relative max-w-3xl mx-auto mb-8">
+        <div class="relative max-w-4xl mx-auto mb-6 hero-mockup-wrap">
           <div class="absolute -inset-4 bg-purple-300/30 rounded-3xl blur-2xl -z-10"></div>
           <img src="assets/kit-mockup-novo-BJCKaZPm.webp" alt="Mockup do kit de exercícios e atividades para idosos" class="hero-mockup-img w-full h-auto block" width="1200" height="900" loading="eager" decoding="async" fetchpriority="high" />
         </div>
@@ -472,6 +472,8 @@
   </script>
 </body>
 </html>
+
+
 
 
 
